@@ -318,7 +318,7 @@ section
 }
 .header.scrolled
 {
-	background: #fff;
+	background: rgba(255,255,255,0.85);
 }
 
 .main_nav_list li a{	color: #0d0d5d;
@@ -1156,7 +1156,6 @@ section
 {
 	width: 100%;
 	padding-top: 100px;
-	padding-bottom: 105px;
 }
 .intro_title
 {
@@ -1193,7 +1192,7 @@ section
 	width: 100%;
 	height: 100%;
 	z-index: 2;
-	background: rgba(49, 18, 75, 0.55);
+	background: rgba(49, 18, 75, 0);
 }
 .intro_item_background
 {
@@ -1231,7 +1230,7 @@ section
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 27px;
-	background: #fa9e1c;
+	background: #0d0d5d;
 	border-radius: 14px;
 }
 .intro_button
@@ -1594,7 +1593,7 @@ section
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 25%;
+	height: 35%;
 	background: rgba(13,13,93,0.8);
 }
 .test_content
@@ -1604,6 +1603,7 @@ section
 	padding-left: 38px;
 	padding-top: 44px;
 	padding-right: 40px;
+	text-align: center;
 }
 .test_item_info
 {
@@ -1781,7 +1781,7 @@ section
 	padding-left: 48px;
 	padding-right: 48px;
 	padding-bottom: 88px;
-	background: linear-gradient(to top right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to top right, #ff4040, #0d0d5d);
 }
 .contact_form
 {
@@ -1836,7 +1836,7 @@ section
 	line-height: 53px;
 	padding-left: 29px;
 	padding-right: 29px;
-	background: #31124b;
+	background: #0d0d5d;
 	-webkit-transform: translateY(15px);
 	-moz-transform: translateY(15px);
 	-ms-transform: translateY(15px);
@@ -1896,7 +1896,7 @@ section
 	width: 100%;
 	padding-top: 113px;
 	padding-bottom: 104px;
-	background: #31124b;
+	background: #0d0d5d;
 }
 .footer_title
 {
@@ -1931,7 +1931,7 @@ section
 	display: inline-block;
 	width: 31px;
 	height: 31px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #ff4040;
 	border-radius: 50%;
 	text-align: center;
 	-webkit-transition: all 200ms ease;
@@ -1972,12 +1972,57 @@ section
 }
 .footer_social_item:hover
 {
-	background: #fa9e1b;
+	background: #ff4040;
 }
 .footer_social_item:hover a i
 {
 	color: #31124b;
 }
+
+.contact_info_icon 
+{
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	border: solid 1px #ff4040;
+	border-radius: 50%;
+	text-align: center;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	margin-right: 9px;
+}
+
+.contact_info_icon i
+{
+	display: block;
+	position: relative;
+	color: #FFFFFF;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 12px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.contact_info_icon:hover
+{
+	background: #ff4040;
+}
+.contact_info_icon:hover i
+{
+	color: #31124b;
+}
+
+
 
 /*********************************
 13.2 Footer - Blog
@@ -2046,7 +2091,7 @@ section
 	float: left;
 	margin-right: 9px;
 	margin-bottom: 9px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #ff4040;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -2055,7 +2100,7 @@ section
 }
 .tag_item:hover
 {
-	background: #fa9e1b;
+	background: #ff4040;
 }
 .tag_item a
 {
@@ -2101,7 +2146,7 @@ section
 .contact_info_item:hover .contact_info_text,
 .contact_info_item:hover .contact_info_text a
 {
-	color: #fa9e1b;
+	color: #ff4040;
 }
 
 /*********************************

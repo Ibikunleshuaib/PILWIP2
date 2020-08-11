@@ -321,14 +321,16 @@ $(document).ready(function()
 				loop:true,
 				nav:false,
 				dots:false,
-				smartSpeed:1200,
+				smartSpeed:1000,
 				margin:30,
+				autoplay:true,
+    			autoplayTimeout:2000,
 				responsive:
 				{
 					0:{items:1},
 					480:{items:1},
-					768:{items:2},
-					992:{items:3}
+					768:{items:3},
+					992:{items:4}
 				}
 			});
 
@@ -354,6 +356,7 @@ $(document).ready(function()
 			}
 		}
 	}
+
 
 	/* 
 

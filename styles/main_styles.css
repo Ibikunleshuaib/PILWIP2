@@ -620,7 +620,7 @@ section
 .hamburger i
 {
 	font-size: 24px;
-	color: #FFFFFF;
+	color: #0d0d5d;
 }
 .hamburger:hover i
 {
@@ -631,7 +631,7 @@ section
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #0d0d5d, #ff4040);
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -1811,7 +1811,8 @@ section
 .contact_form_subject
 {
 	width: 100%;
-	margin-top: 11px;
+	margin-top: px;
+	margin-bottom: 11px;
 }
 .contact_form_message
 {
@@ -2200,4 +2201,30 @@ section
 .footer_nav_item a:hover
 {
 	color: #FFFFFF;
+}
+
+/*********************************
+15. Custom Designs
+*********************************/
+
+	
+.contact_form_container label {
+	color: 	white;
+	font-size: 	18px;
+}
+
+.contact_form_container .contact_title {
+	color: #fff;
+	text-align: center;
+}
+		
+.contact_form_container p {
+	margin-top: 20px; 
+	color: #fff;				 
+}
+
+@media only screen and (max-width: 700px) {
+  .trending {
+    display: none;
+  }
 }

@@ -253,7 +253,7 @@ section
 	left: 0;
 	width: 200%;
 	height: 100%;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+	background: linear-gradient(to right, #0d0d5d, #ff4040, #0d0d5d);
 	z-index: -1;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -315,7 +315,7 @@ section
 {
 	position: fixed;
 	width: 100%;
-	background: rgba(54, 19, 84, 0.6);
+	background: rgba(255,255,255,0.6);
 	z-index: 12;
 }
 .header.scrolled
@@ -498,7 +498,7 @@ section
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-weight: 600;
-	color: #FFFFFF;
+	color: #0d0d5d;
 	text-transform: uppercase;
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -624,7 +624,7 @@ section
 .hamburger i
 {
 	font-size: 24px;
-	color: #FFFFFF;
+	color: #0d0d5d;
 }
 .hamburger:hover i
 {
@@ -635,7 +635,7 @@ section
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #0d0d5d, #ff4040);
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -1104,7 +1104,7 @@ section
 }
 
 /*********************************
-11. Footer
+13. Footer
 *********************************/
 
 .footer
@@ -1112,7 +1112,7 @@ section
 	width: 100%;
 	padding-top: 113px;
 	padding-bottom: 104px;
-	background: #31124b;
+	background: #0d0d5d;
 }
 .footer_title
 {
@@ -1123,7 +1123,7 @@ section
 }
 
 /*********************************
-11.1 Footer - About
+13.1 Footer - About
 *********************************/
 
 .footer_about
@@ -1147,7 +1147,7 @@ section
 	display: inline-block;
 	width: 31px;
 	height: 31px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #ff4040;
 	border-radius: 50%;
 	text-align: center;
 	-webkit-transition: all 200ms ease;
@@ -1188,15 +1188,60 @@ section
 }
 .footer_social_item:hover
 {
-	background: #fa9e1b;
+	background: #ff4040;
 }
 .footer_social_item:hover a i
 {
 	color: #31124b;
 }
 
+.contact_info_icon 
+{
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	border: solid 1px #ff4040;
+	border-radius: 50%;
+	text-align: center;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	margin-right: 9px;
+}
+
+.contact_info_icon i
+{
+	display: block;
+	position: relative;
+	color: #FFFFFF;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 12px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.contact_info_icon:hover
+{
+	background: #ff4040;
+}
+.contact_info_icon:hover i
+{
+	color: #31124b;
+}
+
+
+
 /*********************************
-11.2 Footer - Blog
+13.2 Footer - Blog
 *********************************/
 
 .footer_blog
@@ -1249,7 +1294,7 @@ section
 }
 
 /*********************************
-11.3 Footer - Tags
+13.3 Footer - Tags
 *********************************/
 
 .footer_tags
@@ -1262,7 +1307,7 @@ section
 	float: left;
 	margin-right: 9px;
 	margin-bottom: 9px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #ff4040;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1271,7 +1316,7 @@ section
 }
 .tag_item:hover
 {
-	background: #fa9e1b;
+	background: #ff4040;
 }
 .tag_item a
 {
@@ -1285,7 +1330,7 @@ section
 }
 
 /*********************************
-11.4 Footer - Contact Info
+13.4 Footer - Contact Info
 *********************************/
 
 .contact_info_list
@@ -1317,58 +1362,6 @@ section
 .contact_info_item:hover .contact_info_text,
 .contact_info_item:hover .contact_info_text a
 {
-	color: #fa9e1b;
+	color: #ff4040;
 }
 
-/*********************************
-12. Copyright
-*********************************/
-
-.copyright
-{
-	background: #1f0733;
-}
-.copyright_content
-{
-	height: 52px;
-}
-.copyright_content div
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: #685677;
-}
-.footer_nav_container
-{
-	height: 52px;
-}
-.footer_nav
-{
-	
-}
-.footer_nav_list
-{
-	font-size: 0px;
-}
-.footer_nav_item
-{
-	display: inline-block;
-	margin-right: 40px;
-}
-.footer_nav_item a
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: #685677;
-	text-transform: uppercase;
-	line-height: 2;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_nav_item a:hover
-{
-	color: #FFFFFF;
-}

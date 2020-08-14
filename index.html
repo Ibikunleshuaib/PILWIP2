@@ -40,11 +40,11 @@
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item" ><a href="#">home</a></li>
+								<li class="main_nav_item" ><a href="#">Home</a></li>
 								<li class="main_nav_item"><a href="#">About Us</a></li>
-								<li class="main_nav_item"><a href="#">Pickup Service</a></li>
-								<li class="main_nav_item" style="border: solid 1px #ff4040"><a href="#">Sign in</a></li>
-								<li class="main_nav_item" style="border: solid 1px #ff4040"><a href="#">Sign up</a></li>
+								<li class="main_nav_item"><a href="#">Services</a></li>
+								<li class="main_nav_item"><a href="#">Contact Us</a></li>
+								
 							</ul>
 						</div>
 						<div class="content_search ml-lg-0 ml-auto">
@@ -90,11 +90,10 @@
 			<div class="menu_close_container"><div class="menu_close"></div></div>
 			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="#">home</a></li>
-				<li class="menu_item"><a href="#">about us</a></li>
-				<li class="menu_item"><a href="#">offers</a></li>
-				<li class="menu_item"><a href="#">news</a></li>
-				<li class="menu_item"><a href="#">contact</a></li>
+				<li class="menu_item"><a href="#">Home</a></li>
+				<li class="menu_item"><a href="#">About us</a></li>
+				<li class="menu_item"><a href="#">Services</a></li>
+				<li class="menu_item"><a href="#">Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
@@ -424,7 +423,7 @@
 							-->
 
 
-								<!-- Testimonial Item -->
+								<!-- Testimonial Item 
 							<div class="owl-item">
 								<div class="test_item">
 									<div class="test_image"><img src="images/Luxirous.png" alt="" style=" display: block; margin-left: auto; margin-right: auto;">
@@ -437,6 +436,7 @@
 								</div>
 							</div>
 						</div>
+						-->
 
 					<style>
 						.about_content {
@@ -545,7 +545,7 @@
 						<div class="intro_item_background" style="background-image:url(images/Abuja-Image.jpg)"></div>
 						<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
 							<div class="intro_date">Lagos to Abuja</div>
-							<div class="button intro_button"><div class="button_bcg"></div><a href="#">Book Now<span></span><span></span><span></span></a></div>
+							<div class="button intro_button"><div class="button_bcg"></div><a href="#popup" id="showPopUp">Book Now<span></span><span></span><span></span></a></div>
 						</div>
 					</div>
 				</div>
@@ -559,7 +559,7 @@
 						<div class="intro_item_background" style="background-image:url(images/Porthacourt-Image.jpg)"></div>
 						<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
 							<div class="intro_date">Lagos to Porthacourt</div>
-							<div class="button intro_button"><div class="button_bcg"></div><a href="#">Book Now<span></span><span></span><span></span></a></div>
+							<div class="button intro_button" onclick="document.getElementById('modal-wrapper').style.display='block'"><div class="button_bcg"></div><a href="#">Book Now<span></span><span></span><span></span></a></div>
 						</div>
 					</div>
 				</div>
@@ -848,9 +848,195 @@
 
 			</div>
 		</div>
-	</footer>		
-</div>
+	</footer>
 
+	<script type="text/javascript">
+		//let popup = document.getElementById('popup');
+		let showPopUp = document.getElementById('showPopUp');
+
+		document.getElementById("showPopUp").addEventListener("click", function(){
+ 	    document.getElementById("popup").style.display = "block";
+		});
+		
+
+		function hide() {
+			let Popup = document.getElementById('popup');
+			//let showNow =document.getElementByClassName('closeButton');
+			popup.style.display = 'none'
+		}
+		
+	</script>
+
+	<style>
+		#popup {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+</style>
+	<!-- Search -->
+
+	<div class="search" id="popup" style="display:none"><button style="float:right; color: background-color:black; font-size: 30px" class="closeButton" onClick="hide()"><span>X</span></button>
+		
+
+		<!-- Search Contents -->
+		
+		<div class="container fill_height">
+			<div class="row fill_height">
+				<div class="col fill_height">
+
+					<!-- Search Tabs -->
+					
+					<!-- Search Panel -->
+
+					<div class="search_panel active">
+						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							
+							<div class="search_item" style="width:13.961%">
+								<div>Take off location</div>
+								<select name="children" id="children_1" class="dropdown_item_select search_input">
+									<option selected="">Lagos</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>Destination</div>
+								<select name="children" id="children_1" class="dropdown_item_select search_input">
+									<option selected="">Abuja</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>Date</div>
+								<input type="date" class="check_out search_input" placeholder="dd-mm-yyyy">
+							</div>
+							<div class="search_item">
+								<div>Number of Passengers</div>
+								<select name="adults" id="adults_1" class="dropdown_item_select search_input" placeholder>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+								</select>
+							</div>
+							<button class="button search_button">Book<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+
+					
+					<!-- Search Panel -->
+
+					<div class="search_panel">
+						<form action="#" id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item" style="width:13.961%">
+								<div>Where are you leaving from?</div>
+								<select name="children" id="children_1" class="dropdown_item_select search_input">
+									<option>--select--</option>
+									<option>Abia</option>
+									<option>Abuja</option>
+									<option>Akwa Ibom</option>
+									<option>Anambra</option>
+									<option>Benin</option>
+									<option>Calabar</option>
+									<option>Enugu</option>
+									<option>Ibadan</option>
+									<option>Ijebu Ode</option>
+									<option>Imo</option>
+									<option>Lagos</option>
+									<option>Kogi</option>
+									<option>Porthacourt</option>
+									<option>Warri</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>Where are you going to?</div>
+								<select name="children" id="children_1" class="dropdown_item_select search_input">
+									<option>--select--</option>
+									<option>Abia</option>
+									<option>Abuja</option>
+									<option>Akwa Ibom</option>
+									<option>Anambra</option>
+									<option>Benin</option>
+									<option>Calabar</option>
+									<option>Enugu</option>
+									<option>Ibadan</option>
+									<option>Ijebu Ode</option>
+									<option>Imo</option>
+									<option>Lagos</option>
+									<option>Kogi</option>
+									<option>Porthacourt</option>
+									<option>Warri</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>Select Vehicle</div>
+								<select name="adults" id="adults_1" class="dropdown_item_select search_input" placeholder>
+									<option>--Select--</option>
+									<option>Bus</option>
+									<option>Car</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>Date</div>
+								<input type="date" class="check_out search_input" placeholder="dd-mm-yyyy">
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+					<!-- Search Panel -->
+
+					<div class="search_panel">
+						<form action="#" id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item">
+								<div>Enter Ref Code</div>
+								<input type="text" class="destination search_input" required="required">
+							</div>
+							<button class="button search_button">search<span></span><span></span><span></span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	
+
+</div>
+<style>
+.overlay {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.overlay.open {
+  display: flex;
+  animation: show-overlay 0.5s;
+}
+
+@keyframes show-overlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+</style>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>

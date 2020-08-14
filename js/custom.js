@@ -403,3 +403,24 @@ $(document).ready(function()
 		}
 	}
 });
+
+
+$(document).ready(function()
+
+{
+    "use strict";
+
+        $('#aboutScroll').click(function() {
+            $('html, body').animate({scrollTop: $('#about').offset().top}, 1500);
+        });
+        $('#servicesScroll').click(function() {
+            $('html, body').animate({scrollTop: $('#services').offset().top}, 1500);
+        });
+        $('#contactScroll').click(function() {
+            $('html, body').animate({scrollTop: $('#contact').offset().top}, 1500);
+        });
+ 
+        $('#bookingScroll').click(function() {
+            $('html, body').animate({scrollTop: $('#booking').offset().top}, 1500);
+        });
+    });

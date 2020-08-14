@@ -1409,17 +1409,17 @@ section
 .offers
 {
 	width: 100%;
-	padding-top: 105px;
-	padding-bottom: 43px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background: #f3f6f9;
 }
 .offers_items
 {
-	margin-top: 90px;
+	margin-top: 10px;
 }
 .offers_col
 {
-	margin-bottom: 83px;
+	margin-bottom: 10px;
 }
 .offers_item
 {
@@ -1467,11 +1467,12 @@ section
 }
 .offers_price
 {
-	display: inline-block;
+	
 	font-size: 36px;
 	font-weight: 700;
-	color: #eda84a;
+	color: #0d0d5d;
 	line-height: 25px;
+	text-align: center;
 }
 .offers_price span
 {

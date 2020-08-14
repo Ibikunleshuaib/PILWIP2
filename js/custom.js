@@ -423,4 +423,17 @@ $(document).ready(function()
         $('#bookingScroll').click(function() {
             $('html, body').animate({scrollTop: $('#booking').offset().top}, 1500);
         });
+        $('#aboutScroll2').click(function() {
+            $('html, body').animate({scrollTop: $('#about').offset().top}, 1500);
+        });
+        $('#servicesScroll2').click(function() {
+            $('html, body').animate({scrollTop: $('#services').offset().top}, 1500);
+        });
+        $('#contactScroll2').click(function() {
+            $('html, body').animate({scrollTop: $('#contact').offset().top}, 1500);
+        });
+ 
+        $('#bookingScroll2').click(function() {
+            $('html, body').animate({scrollTop: $('#booking').offset().top}, 1500);
+        });
     });

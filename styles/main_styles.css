@@ -1297,9 +1297,8 @@ section
 
 .cta
 {
-	padding-top: 125px;
-	padding-bottom: 116px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	
+	background: linear-gradient(to right,#ff4040 , #0d0d5d);
 }
 .cta_background
 {
@@ -1777,10 +1776,9 @@ section
 }
 .contact_form_container
 {
-	padding-top: 74px;
+	
 	padding-left: 48px;
 	padding-right: 48px;
-	padding-bottom: 88px;
 	background: linear-gradient(to top right, #ff4040, #0d0d5d);
 }
 .contact_form

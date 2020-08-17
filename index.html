@@ -80,7 +80,7 @@
 
 	<!-- Home -->
 
-	<div class="home">
+	<div class="home" id="homeHeader">
 		
 		<!-- Home Slider -->
 
@@ -308,7 +308,7 @@
 	
 	<!-- Intro -->
 	
-	<div class="intro">
+	<div class="intro" id="routes" >
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -829,13 +829,22 @@
 
 		document.getElementById("showPopUp").addEventListener("click", function(){
  	    document.getElementById("popup").style.display = "block";
+ 	    document.getElementById("homeHeader").style.display = "none";
+ 	    document.getElementById("booking").style.display = "none";
+ 	    document.getElementById("routes").style.display = "none";
 		});
 		
 
 		function hide() {
 			let Popup = document.getElementById('popup');
+			let homeHeader = document.getElementById("homeHeader");
+ 	   		let booking = document.getElementById("booking");
+ 	    	let routes = document.getElementById("routes");
 			//let showNow =document.getElementByClassName('closeButton');
-			popup.style.display = 'none'
+			popup.style.display = 'none';
+			homeHeader.style.display = 'block';
+			booking.style.display = 'block';
+			routes.style.display = 'block';
 		}
 		
 	</script>
@@ -853,8 +862,11 @@
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+  margin-top: 90px;
+  margin-bottom: 70px
 }
 
+#
 </style>
 	<!-- Search -->
 

@@ -417,11 +417,11 @@ $(document).ready(function()
             $('html, body').animate({scrollTop: $('#services').offset().top}, 1500);
         });
         $('#contactScroll').click(function() {
-            $('html, body').animate({scrollTop: $('#contact').offset().top}, 1500);
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
         });
  
         $('#bookingScroll').click(function() {
-            $('html, body').animate({scrollTop: $('#booking').offset().top}, 1500);
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
         });
         $('#aboutScroll2').click(function() {
             $('html, body').animate({scrollTop: $('#about').offset().top}, 1500);
@@ -430,10 +430,35 @@ $(document).ready(function()
             $('html, body').animate({scrollTop: $('#services').offset().top}, 1500);
         });
         $('#contactScroll2').click(function() {
-            $('html, body').animate({scrollTop: $('#contact').offset().top}, 1500);
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
         });
  
         $('#bookingScroll2').click(function() {
-            $('html, body').animate({scrollTop: $('#booking').offset().top}, 1500);
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
         });
-    });
+
+         $('#lagosToAbuja').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
+        });
+         $('#lagosToPorthacourt').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
+        });
+         $('#lagosToBenin').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
+        });
+         $('#aboutContactLink').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 700);
+        });
+          $('#makeBooking1').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
+        });
+          $('#makeBooking2').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
+        });
+          $('#makeBooking3').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 1500);
+        });
+          $('#learnMoreButton').click(function() {
+            $('html, body').animate({scrollTop: $('#contactDetails').offset().top}, 700);
+        });
+    });learnMoreButton
